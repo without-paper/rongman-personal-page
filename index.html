@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>NianBroken</title>
-		<meta name="description" content="Suinian,Nianbroken" />
+		<title>Rongman Xu</title>
+		<meta name="description" content="Rongman Xu" />
 		<meta charset="utf-8" />
 		<meta http-equiv="content-language" content="zh-cn" />
 		<link rel="shortcut icon" href="images/favicon.ico" />
@@ -149,7 +149,7 @@
 					and as the Head of the Student Council Volunteer Department in Grade 11, organizing
 					numerous volunteer activities and fostering a strong culture of community service.</li>
 				  <li>Hobbies: Writing, Hackathons, Piano (ABRSM Grade 6)</li>
-				  <li>Languages: English - IELTS 7.0, Mandarin (mother tongue)</li>
+				  <li>English- Fluent (IELTS 7.0), Mandarin- Native speaker</li>
 				</ul>
 			</section>
 
@@ -158,13 +158,16 @@
 				<ul>
 					<h3>Tools</h3>
 						Git, LaTeX, Conda, Docker, VSCode Remote, Cloud Servers, Linux
+
 					<h3>Python</h3>
 						Proficient in Python for deep learning, animation, and computer vision tasks. 
 						Experienced with PyTorch for implementing and fine-tuning diffusion models, keypoint-based motion control, 
 						and SDS loss optimization in DreamFusion-style pipelines. 
+						
 					<h3>Haskell</h3>
 						Completed the course "Introduction to Computation" at the University of Edinburgh (100/100). Acquired strong understanding of functional programming, including recursion, 
 						higher-order functions, list comprehensions, and algebraic data types. Final coursework involved implementing a parser and interpreter for a small logic language.
+
 					<h3>Java</h3>
 						Learned Java through the course "Object-Oriented Programming" at the University of Edinburgh (96/100). Gained proficiency in OOP principles, inheritance, interfaces, and design patterns. Completed a capstone project building a GPA calculator with custom exception handling, 
 						input validation, and file parsing. Also implemented vehicle cost modeling with multiple class hierarchies.
@@ -173,17 +176,50 @@
 			  
 			<section id="awards" class="section-block">
 				<h2>Honors and Awards</h2>
-				<ul>
-				  <li>09/2022- 04/2023: Produced HOSA2023 ”30-second Public Service Advertisement”
-					with other team members, gaining 10,000 views and winning the National Bronze
-					Award in the preliminary round (TOP30%) and the National Outstanding Award in
-					the PSA (TOP35%- 50%)</li>
-				  <li>05/04/2023: TOP25% in the Euclid Mathematics Competition</li>
-				  <li>03/08/2023: First Prize in the Australian AMC Mathematics Competition</li>
-				  <li>19/10/2024: Winner of the HackathonsUK Challenge in <a href="https://devpost.com/software/budgetbunny-8pvnwo" target="_blank">AdaHack 2024- Budget
-					Bunny</a>. Developed teamwork and time management skills.</li>
-				</ul>
-			</section>
+				
+				<div class="timeline">
+				  <!-- 第一个奖项 -->
+				  <div class="timeline-item">
+					<div class="timeline-date">09/2022 - 04/2023</div>
+					<div class="timeline-content">
+					  <h3>HOSA2023 Public Service Advertisement</h3>
+					  <p>Produced "30-second Public Service Advertisement" with other team members, gaining 10,000 views and winning:</p>
+					  <ul>
+						<li>National Bronze Award in the preliminary round (TOP 30%)</li>
+						<li>National Outstanding Award in the PSA (TOP 35%-50%)</li>
+					  </ul>
+					</div>
+				  </div>
+				  
+				  <!-- 第二个奖项 -->
+				  <div class="timeline-item">
+					<div class="timeline-date">05/04/2023</div>
+					<div class="timeline-content">
+					  <h3>Euclid Mathematics Competition</h3>
+					  <p>TOP 25% ranking</p>
+					</div>
+				  </div>
+				  
+				  <!-- 第三个奖项 -->
+				  <div class="timeline-item">
+					<div class="timeline-date">03/08/2023</div>
+					<div class="timeline-content">
+					  <h3>Australian AMC Mathematics Competition</h3>
+					  <p>First Prize winner</p>
+					</div>
+				  </div>
+				  
+				  <!-- 第四个奖项 -->
+				  <div class="timeline-item">
+					<div class="timeline-date">19/10/2024</div>
+					<div class="timeline-content">
+					  <h3>HackathonsUK Challenge</h3>
+					  <p>Winner of <a href="https://devpost.com/software/budgetbunny-8pvnwo" target="_blank">AdaHack 2024 - Budget Bunny</a></p>
+					  <p>Developed teamwork and time management skills.</p>
+					</div>
+				  </div>
+				</div>
+			  </section>
 
 			<section id="contact" class="section-block">
 				<h2>Contact</h2>
@@ -205,7 +241,7 @@
 				</p>
 			</footer>
 		</div>
-		<canvas id="sakura" style="z-index: 2; position: fixed; left: 0; top: 0; height: 100vh; width: 100vw"> </canvas>
+		<canvas id="sakura" style="z-index: -1; position: fixed; left: 0; top: 0; height: 100%; width: 100%; pointer-events: none; object-fit: cover;"> </canvas>
 		<!-- BG -->
 		<!-- <div id="bg"> -->
 		<!-- Scripts -->
@@ -215,71 +251,222 @@
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
 		<style>
-			canvas {
-				padding: 0;
-				margin: 0;
+			/* 全局样式优化 */
+			body {
+			  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			  line-height: 1.6;
+			  color: #333;
 			}
-			.contact-icons {
-				margin-top: 0.5rem;
-			}
+			
+			/* 内容区域优化 */
 			.section-block {
-				padding: 4rem 2rem;
-				max-width: 800px;
-				margin: 0 auto;
-				color: white;
+			  padding: 3rem 10%;
+			  max-width: 1000px;
+			  margin: 0 auto;
+			  background-color: rgba(255, 255, 255, 0.9);
+			  border-radius: 8px;
+			  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+			  margin-bottom: 2rem;
 			}
+			
 			.section-block h2 {
-				font-size: 2em;
-				margin-bottom: 1rem;
-				border-bottom: 1px solid #aaa;
+			  font-size: 2rem;
+			  margin-bottom: 1.5rem;
+			  padding-bottom: 0.5rem;
+			  border-bottom: 2px solid #ffb6c1;
+			  color: #333;
 			}
+			
+			/* 教育/项目条目优化 */
 			.edu-entry {
-				display: flex;
-				margin-bottom: 2rem;
-				align-items: flex-start;
+			  display: flex;
+			  margin-bottom: 2rem;
+			  padding: 1.5rem;
+			  background-color: rgba(255, 255, 255, 0.8);
+			  border-radius: 6px;
+			  transition: transform 0.3s ease;
 			}
+			
+			.edu-entry:hover {
+			  transform: translateY(-3px);
+			  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+			}
+			
 			.edu-time {
-				width: 120px;
-				font-weight: bold;
-				color: #aaa;
+			  width: 150px;
+			  font-weight: bold;
+			  color: #666;
+			  flex-shrink: 0;
 			}
+			
 			.edu-detail {
-				flex: 1;
+			  flex: 1;
+			  padding-left: 1.5rem;
+			  border-left: 1px solid #eee;
 			}
+			
 			.edu-detail h3 {
-				margin: 0 0 0.3rem;
-				color: #fff;
-				font-size: 1.2rem;
+			  margin: 0 0 0.5rem;
+			  color: #2c3e50;
+			  font-size: 1.3rem;
 			}
-			.edu-detail p {
-				margin: 0.2rem 0;
+			
+			.edu-detail h4 {
+			  margin: 0 0 0.5rem;
+			  color: #7f8c8d;
+			  font-size: 1rem;
+			  font-weight: normal;
 			}
+			
+			.edu-detail p, .edu-detail ul {
+			  margin: 0.5rem 0;
+			  color: #555;
+			}
+			
+			.edu-detail ul {
+			  padding-left: 1.5rem;
+			}
+			
+			.edu-detail li {
+			  margin-bottom: 0.5rem;
+			}
+			
+			/* 时间轴优化 */
+			.timeline {
+			  position: relative;
+			  max-width: 800px;
+			  margin: 0 auto;
+			  padding-left: 50px;
+			}
+			
+			.timeline:before {
+			  content: '';
+			  position: absolute;
+			  top: 0;
+			  bottom: 0;
+			  left: 20px;
+			  width: 3px;
+			  background: #ffb6c1;
+			}
+			
+			.timeline-item {
+			  position: relative;
+			  margin-bottom: 30px;
+			}
+			
+			.timeline-date {
+			  position: absolute;
+			  left: -50px;
+			  width: 100px;
+			  text-align: right;
+			  font-weight: bold;
+			  color: #666;
+			  top: 3px;
+			}
+			
+			.timeline-content {
+			  padding: 20px;
+			  background: rgba(255, 255, 255, 0.8);
+			  border-radius: 6px;
+			  position: relative;
+			  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+			}
+			
+			.timeline-content h3 {
+			  margin-top: 0;
+			  color: #2c3e50;
+			  font-size: 1.2rem;
+			}
+			
+			/* 导航菜单优化 */
+			nav ul {
+			  display: flex;
+			  flex-wrap: wrap;
+			  justify-content: center;
+			  padding: 0;
+			  margin: 2rem 0;
+			}
+			
+			nav li {
+			  margin: 0.5rem;
+			}
+			
+			nav a {
+			  padding: 0.5rem 1rem;
+			  background-color: rgba(255, 182, 193, 0.7);
+			  color: white;
+			  border-radius: 4px;
+			  text-decoration: none;
+			  transition: all 0.3s ease;
+			}
+			
+			nav a:hover {
+			  background-color: #ffb6c1;
+			  transform: translateY(-2px);
+			}
+			
+			/* 响应式设计 */
+			@media (max-width: 768px) {
+			  .section-block {
+				padding: 2rem 5%;
+			  }
+			  
+			  .edu-entry {
+				flex-direction: column;
+			  }
+			  
+			  .edu-time {
+				width: 100%;
+				margin-bottom: 0.5rem;
+			  }
+			  
+			  .edu-detail {
+				padding-left: 0;
+				border-left: none;
+				border-top: 1px solid #eee;
+				padding-top: 1rem;
+			  }
+			  
+			  nav ul {
+				flex-direction: column;
+				align-items: center;
+			  }
+			}
+			
+			/* 联系图标优化 */
+			.contact-icons {
+			  display: flex;
+			  justify-content: center;
+			  margin-top: 1rem;
+			}
+			
+			.contact-icons a {
+			  margin: 0 10px;
+			  transition: transform 0.3s ease;
+			}
+			
+			.contact-icons a:hover {
+			  transform: scale(1.2);
+			}
+			
+			/* 返回顶部按钮优化 */
 			#backToTopBtn {
-				display: none;
-				position: fixed;
-				bottom: 30px;
-				right: 30px;
-				z-index: 99;
-				width: 48px;
-				height: 48px;
-				font-size: 24px;
-				line-height: 48px;
-				text-align: center;
-				font-family: Arial, sans-serif;
-				border: none;
-				outline: none;
-				background-color: #ffb6c1;
-				color: white;
-				cursor: pointer;
-				border-radius: 50%;
-				box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
-				transition: background-color 0.3s ease;
-				padding: 0;
+			  background-color: #ffb6c1;
+			  color: white;
+			  border: none;
+			  border-radius: 50%;
+			  width: 50px;
+			  height: 50px;
+			  font-size: 1.2rem;
+			  cursor: pointer;
+			  transition: all 0.3s ease;
 			}
+			
 			#backToTopBtn:hover {
-				background-color: #f08080;
+			  background-color: #ff8fab;
+			  transform: translateY(-3px);
 			}
-		</style>
+		  </style>
 		<!-- sakura shader -->
 		<script id="sakura_point_vsh" type="x-shader/x_vertex">
 			uniform mat4 uProjection;
