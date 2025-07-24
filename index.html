@@ -26,10 +26,35 @@
 				<div class="icon">
 					<img src="images/icon-fa-gem.jpg" alt="personal page" title="personal page" class="logo" />
 				</div>
+
+				<style>
+					/* 针对这部分内容添加特定样式 */
+					.content .inner {
+						color: #333; /* 改为深色文字 */
+						line-height: 1.4; /* 减小行间距 */
+						padding: 1.5rem;
+						background-color: rgba(255, 255, 255, 0.8); /* 添加半透明白色背景 */
+						border-radius: 8px; /* 圆角 */
+					}
+					
+					.content .inner h1 {
+						color: #000; /* 标题改为纯黑 */
+						margin-bottom: 1rem; /* 增加标题与正文间距 */
+					}
+					
+					.content .inner p {
+						margin-bottom: 0.8rem; /* 调整段落间距 */
+						font-size: 1rem; /* 确保字体大小合适 */
+					}
+				</style>
+
 				<div class="content">
 					<div class="inner">
 						<h1>RONGMAN XU</h1>
-						<p>Computer Science and Mathematics major with a strong interest in machine learning, data analytics, artificial intelligence, and software development.</p>
+						<p>Hiya! Welcome to my little world! ^v^</p>
+						<p>I'm a student passionate about turning ideas into intelligent systems. Whether it's exploring AI, crunching data, or building software, I’m always excited by the challenge and creativity behind technology.</p>
+						<p>I love joining hackathons and tech-related events, and I'm always enthusiastic about meeting new people!</p>
+						<p>Personally, I also enjoy playing all kinds of video games, watching anime and horror movies — feel free to chat with me if we share the same interests!</p>
 					</div>
 				</div>
 				<nav>
@@ -50,7 +75,10 @@
 				<div class="edu-entry">
 				  <div class="edu-time">2024 - Present</div>
 				  <div class="edu-detail">
-					<h3>University of Edinburgh</h3>
+					<div class="edu-header">
+						<img src="images/uoe-logo.png" alt="University of Edinburgh" class="school-logo">
+						<h3>University of Edinburgh</h3>
+					</div>
 					<p>BSc Hons Computer Science and Mathematics</p>
 					<p>First-year average: <strong>90.83 / 100</strong> (A1)</p>
 				  </div>
@@ -59,7 +87,10 @@
 				<div class="edu-entry">
 				  <div class="edu-time">2017 - 2023</div>
 				  <div class="edu-detail">
-					<h3>Beijing No.171 High School</h3>
+					<div class="edu-header">
+						<img src="images/171_logo.png" alt="University of Edinburgh" class="school-logo">
+						<h3>Beijing No.171 High School</h3>
+					</div>
 					<p>Junior High and Senior High</p>
 					<p>A-level: <strong>A*</strong> (Maths, Further Maths), <strong>A</strong> (Physics, Econ)</p>
 				  </div>
@@ -257,6 +288,7 @@
 		<style>
 			/* 全局样式优化 */
 			body {
+			  font-size: 16px;
 			  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 			  line-height: 1.6;
 			  color: #333;
@@ -340,7 +372,7 @@
 			  position: relative;
 			  max-width: 800px;
 			  margin: 0 auto;
-			  padding-left: 50px;
+			  padding-left: 140px;
 			}
 			
 			.timeline:before {
@@ -348,32 +380,39 @@
 			  position: absolute;
 			  top: 0;
 			  bottom: 0;
-			  left: 20px;
+			  left: 130px;
 			  width: 3px;
 			  background: #ffb6c1;
 			}
 			
 			.timeline-item {
 			  position: relative;
-			  margin-bottom: 30px;
+			  margin-bottom: 1.5rem;
 			}
-			
+			.timeline-item:first-child .timeline-date {
+				left: -135px; /* 第一个日期向左更多 */
+				width: 130px;
+			}
 			.timeline-date {
 			  position: absolute;
-			  left: -50px;
-			  width: 100px;
+			  left: -120px;
+			  width: 110px;
 			  text-align: right;
-			  font-weight: bold;
+			  font-size: 0.85rem;
+			  font-weight: 500;
+			  white-space: nowrap;
 			  color: #666;
 			  top: 3px;
+			  padding-right: 10px; 
 			}
 			
 			.timeline-content {
-			  padding: 20px;
+			  margin-left: 0; 
+			  padding: 15px 20px;
 			  background: rgba(255, 255, 255, 0.8);
-			  border-radius: 6px;
+			  border-radius: 8px;
 			  position: relative;
-			  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+			  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 			}
 			
 			.timeline-content h3 {
@@ -408,7 +447,44 @@
 			  background-color: #ffb6c1;
 			  transform: translateY(-2px);
 			}
-			
+			#education {
+				margin-top: 2rem; /* 增加上方间距 */
+				padding-top: 2rem; /* 可选：增加内上边距 */
+			}
+			.edu-header {
+				display: flex;
+				align-items: center;
+				gap: 1rem;
+				margin-bottom: 0.5rem;
+			}
+
+			.school-logo {
+				width: 40px;
+				height: 40px;
+				object-fit: contain;
+			}
+
+			@media (max-width: 1200px) {
+				body {
+					font-size: 15px;
+				}
+			}
+
+			@media (max-width: 992px) {
+				body {
+					font-size: 14px;
+				}
+				
+				.section-block {
+					padding: 2rem 5%;
+				}
+			}
+
+			.school-logo {
+				width: 30px;
+				height: 30px;
+			}
+
 			/* 响应式设计 */
 			@media (max-width: 768px) {
 			  .section-block {

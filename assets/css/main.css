@@ -1037,18 +1037,28 @@ input, select, textarea {
 		box-shadow: inset 0 0 0 1px #ffffff;
 		color: #ffffff !important;
 		cursor: pointer;
-		display: inline-block;
+		display: inline-flex;
 		font-size: 0.8rem;
 		font-weight: 300;
 		height: 2.75rem;
 		letter-spacing: 0.2rem;
 		line-height: 2.75rem;
 		outline: 0;
-		padding: 0 1.25rem 0 1.35rem;
+		align-items: center;
+		justify-content: center;
+		padding: 10px 20px;
 		text-align: center;
 		text-decoration: none;
 		text-transform: uppercase;
 		white-space: nowrap;
+		line-height: normal; /* 重置行高 */
+    	height: auto; /* 取消固定高度 */
+	}
+
+	.button[style*="display: inline-block"] {
+		display: inline-flex !important;
+		align-items: center;
+		justify-content: center;
 	}
 
 		input[type="submit"]:hover,
